@@ -11,8 +11,8 @@ class Blueberry {
 
 	displayBlueberries() {
 		push();
-		scale(size);
-		img(this.blueberry,this.xPos/this.size,this.yPos/this.size);
+		scale(this.size);
+		image(this.blueberry,this.xPos/this.size,this.yPos/this.size);
 		pop();
 	}
 
@@ -32,5 +32,9 @@ class Blueberry {
 
 	setBlueberry(b) {
 		this.blueberry=b;
+	}
+
+	setSize(s) {
+	this.size=s;
 	}
 }
